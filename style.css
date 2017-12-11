@@ -1,0 +1,335 @@
+body{
+  overflow: hidden;
+}
+.container{
+  padding: 0 100px;
+  overflow: hidden;
+  position: relative;
+}
+.logo{
+	width: 200px;
+	height: 100px;
+}
+.skidki{
+	width: 257px;
+	height: 150px;
+}
+.title{
+	display: flex;
+	justify-content: space-between;
+}
+.main{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	position: relative;
+	top: -140px;
+  justify-content: space-between;
+
+}
+.tree img{
+    width: 100%;
+    max-width: 700px;
+
+}
+.prize img{
+  width: 100%;
+	max-width: 450px;
+  
+}
+.prizes{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column-reverse;
+	-moz-flex-direction: column-reverse;
+	-ms-flex-direction: column-reverse;
+	-o-flex-direction: column-reverse;
+	flex-direction: column-reverse;
+  position: relative;
+  z-index: 3;
+}
+#gallery { display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flex;
+display: -o-flex;
+display: flex;
+padding: 0;
+margin: 0;
+position: absolute;
+bottom: 40px;
+z-index: 10;
+left: 20px;
+height: 50px;
+ }
+  .gallery.custom-state-active { background: #eee; }
+  .gallery li { width: 50px; height: 50px; list-style-type: none; text-align: center; }
+  .gallery li h5 { margin: 0 0 0.4em; cursor: move; }
+  .gallery li a { float: right; }
+  .gallery li a.ui-icon-zoomin { float: left; }
+  .gallery li img { width: 100%; cursor: move;  height: 50px; }
+ #gallery li:nth-of-type(1) {
+	position: relative;
+	right: -65px;
+  
+ }
+  #gallery li:nth-of-type(2) {
+ 	position: relative;
+	right: -30px;
+	    top: -40px;
+ }
+  #gallery li:nth-of-type(3) {
+ 	position: relative;
+    bottom: 10px;
+ }
+  #gallery li:nth-of-type(4) {
+ 	position: relative;
+	right: 10px;
+	bottom: 40px;
+ }
+  #gallery li:nth-of-type(5) {
+ 	position: relative;
+	right: 60px;
+ }
+  #gallery li:nth-of-type(6) {
+ 	position: relative;
+	right: 70px
+ }
+ #gallery li:nth-of-type(7) {
+ 	position: relative;
+	right: 120px;
+    top: -40px;
+ }
+  #trash { min-height: 18em; padding: 1%; position: relative; z-index: 2;}
+  #trash h4 { line-height: 16px; margin: 0 0 0.4em; }
+  #trash h4 .ui-icon { float: left; }
+  #trash .gallery h5 { display: none; }
+  #trash ul{
+  	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  #trash li {
+    animation: beat 1s infinite alternate;
+    transform-origin: center;
+    
+  }
+  
+  @keyframes beat{
+  to { transform: scale(0.8); }
+}
+  #trash li:nth-of-type(1){
+    position: relative;
+    right: 40px;
+    width: 60px;
+  }
+   #trash li:nth-of-type(2){
+    position: relative;
+    top: 125px;
+    right: 80px;
+
+  }
+   #trash li:nth-of-type(3){
+    position: relative;
+    left: 20px;
+
+  }
+   #trash li:nth-of-type(4){
+    position: relative;
+    top: 80px;
+    left: 50px;
+  }
+   #trash li:nth-of-type(5){
+    position: relative;
+    right: 150px;
+    top: 80px;
+  }
+   #trash li:nth-of-type(6){
+    position: relative;
+    top: 70px;
+    left: 80px;
+  }
+   #trash li:nth-of-type(7){
+    position: relative;
+    right: 30px;
+
+  }
+.time_count{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+}
+.time_count p{
+  font-size: 40px;
+  color: #0a7779;
+  border: 3px solid #0a7779;
+  padding: 5px 15px;
+  width: 150px;
+  text-align: center;
+}
+.time_count button{
+  font-size: 40px;
+  background-color: #0a7779;
+  padding: 5px 15px;
+  color: #ffffff;
+  border-radius: 15px;
+  width: 185px;
+}
+.after_time{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  border: 3px solid #0a7779;
+  padding: 10px;
+}
+.after_time p{
+  font-size: 20px;
+  color: #0a7779;
+  border: none;
+  padding: 5px 15px;
+  text-align: center;
+}
+.after_time a{
+  font-size: 20px;
+  background-color: #0a7779;
+  padding: 5px 15px;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration-line: none;
+  padding: 15px 20px;
+}
+#snowflakeContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.snowflake {
+    padding-left: 15px;
+    font-family: Cambria, Georgia, serif;
+    font-size: 14px;
+    line-height: 24px;
+    position: fixed;
+    color: #DBFFFF;
+    user-select: none;
+    z-index: 1000;
+}
+.snowflake:hover {
+    cursor: default;
+}
+.santa {
+  z-index: 1;
+  cursor: pointer;
+  -webkit-animation: FlyingSanta 38s infinite linear;
+  -moz-animation: FlyingSanta 38s infinite linear;
+  -ms-animation: FlyingSanta 38s infinite linear;
+  -o-animation: FlyingSanta 38s infinite linear;
+  animation: FlyingSanta 38s infinite linear;
+  bottom: 0%;
+  left: 0%;
+  position: absolute;
+}
+@keyframes FlyingSanta {
+25% {
+bottom: 80%;
+left: 85%;
+transform: rotateY(0deg);
+}
+26% {
+transform: rotateY(180deg);
+}
+50% {
+ bottom:60%;
+ left: 0%;
+ transform: rotateY(180deg);
+}
+51% {
+ transform: rotateY(0deg);
+}
+75% {
+ bottom:40%;
+ left: 85%;
+ transform: rotateY(0deg);
+}
+76% {
+ bottom:40%;
+ left: 85%;
+ transform: rotateY(180deg);
+}
+99% {
+ transform: rotateY(180deg);
+}
+}
+#trash .default{
+  width: 15%;
+  position: absolute;
+  top: 0;
+  left: 42%;
+}
+@media (max-width:1000px){
+  .skidki {
+    max-width: 157px;
+    height: 180px;
+    width: 100%;
+}
+.logo {
+    max-width: 100px;
+    height: 50px;
+    width: 100%;
+}
+.gallery li img{
+    width: 40px;
+    height: 30px;
+  }
+  #gallery{
+    bottom: 0px;
+    z-index: 10;
+    left: -40px;
+  }
+  #gallery li:nth-of-type(3){
+    bottom: 0;
+  }
+  #gallery li:nth-of-type(2){
+    top: -20px;
+  }
+  #gallery li:nth-of-type(4){
+      bottom: 20px
+    }
+  #gallery li:nth-of-type(7){
+    top: -25px;
+  }
+  #trash li:nth-of-type(1){
+    top: 50px;
+  }
+  #trash li:nth-of-type(6){
+    top: 45px;
+  }
+}
